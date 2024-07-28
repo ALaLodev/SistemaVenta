@@ -72,7 +72,7 @@ namespace CapaDatos
             {
                 using (SqlConnection con = new SqlConnection(Conexion.cadena))
                 {
-                    //Obtener procedimiento almacenado de la BD
+                    //Obtener procedimiento almacenado de la BD para registrar usuario
                     SqlCommand cmd = new SqlCommand("sp_registrarusuario", con);
 
                     cmd.Parameters.AddWithValue("Documento", obj.Documento);
@@ -83,7 +83,7 @@ namespace CapaDatos
                     cmd.Parameters.AddWithValue("Estado", obj.Estado);
 
                     cmd.Parameters.Add("IdUsuarioResultado", SqlDbType.Int).Direction = ParameterDirection.Output;
-                    cmd.Parameters.Add("Mensaje", SqlDbType.VarChar).Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add("Mensaje", SqlDbType.VarChar,500).Direction = ParameterDirection.Output;
 
                     cmd.CommandType = CommandType.StoredProcedure;
                     con.Open();
@@ -112,7 +112,7 @@ namespace CapaDatos
             {
                 using (SqlConnection con = new SqlConnection(Conexion.cadena))
                 {
-                    //Obtener procedimiento almacenado de la BD
+                    //Obtener procedimiento almacenado de la BD para editar usuario
                     SqlCommand cmd = new SqlCommand("sp_editarusuario", con);
 
                     cmd.Parameters.AddWithValue("IdUsuario", obj.IdUsuario);
@@ -124,7 +124,7 @@ namespace CapaDatos
                     cmd.Parameters.AddWithValue("Estado", obj.Estado);
 
                     cmd.Parameters.Add("Respuesta", SqlDbType.Int).Direction = ParameterDirection.Output;
-                    cmd.Parameters.Add("Mensaje", SqlDbType.VarChar).Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add("Mensaje", SqlDbType.VarChar,500).Direction = ParameterDirection.Output;
 
                     cmd.CommandType = CommandType.StoredProcedure;
                     con.Open();
@@ -153,19 +153,13 @@ namespace CapaDatos
             {
                 using (SqlConnection con = new SqlConnection(Conexion.cadena))
                 {
-                    //Obtener procedimiento almacenado de la BD
-                    SqlCommand cmd = new SqlCommand("sp_editarusuario", con);
+                    //Obtener procedimiento almacenado de la BD para eliminar usuario
+                    SqlCommand cmd = new SqlCommand("sp_eliminarusuario", con);
 
                     cmd.Parameters.AddWithValue("IdUsuario", obj.IdUsuario);
-                    cmd.Parameters.AddWithValue("Documento", obj.Documento);
-                    cmd.Parameters.AddWithValue("NombreCompleto", obj.NombreCompleto);
-                    cmd.Parameters.AddWithValue("Correo", obj.Correo);
-                    cmd.Parameters.AddWithValue("Clave", obj.Clave);
-                    cmd.Parameters.AddWithValue("IdRol", obj.Ob_Rol.IdRol);
-                    cmd.Parameters.AddWithValue("Estado", obj.Estado);
 
                     cmd.Parameters.Add("Respuesta", SqlDbType.Int).Direction = ParameterDirection.Output;
-                    cmd.Parameters.Add("Mensaje", SqlDbType.VarChar).Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add("Mensaje", SqlDbType.VarChar,500).Direction = ParameterDirection.Output;
 
                     cmd.CommandType = CommandType.StoredProcedure;
                     con.Open();
