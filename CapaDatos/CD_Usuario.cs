@@ -156,7 +156,7 @@ namespace CapaDatos
                     //Obtener procedimiento almacenado de la BD
                     SqlCommand cmd = new SqlCommand("sp_editarusuario", con);
 
-                    cmd.Parameters.AddRange("IdUsuario", obj.IdUsuario);
+                    cmd.Parameters.AddWithValue("IdUsuario", obj.IdUsuario);
                     cmd.Parameters.AddWithValue("Documento", obj.Documento);
                     cmd.Parameters.AddWithValue("NombreCompleto", obj.NombreCompleto);
                     cmd.Parameters.AddWithValue("Correo", obj.Correo);
