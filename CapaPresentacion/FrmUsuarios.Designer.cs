@@ -79,7 +79,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(297, 578);
+            this.label1.Size = new System.Drawing.Size(297, 717);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nº Documento:";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
@@ -262,7 +262,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridViewData.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewData.RowTemplate.Height = 28;
-            this.dataGridViewData.Size = new System.Drawing.Size(1059, 438);
+            this.dataGridViewData.Size = new System.Drawing.Size(1059, 417);
             this.dataGridViewData.TabIndex = 21;
             this.dataGridViewData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewData_CellContentClick);
             this.dataGridViewData.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dataGridViewData_CellPainting);
@@ -514,7 +514,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1443, 578);
+            this.ClientSize = new System.Drawing.Size(1443, 717);
             this.Controls.Add(this.txtIndice);
             this.Controls.Add(this.btnLimpiarBuscador);
             this.Controls.Add(this.btnBuscar);

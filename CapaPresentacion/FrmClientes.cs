@@ -29,8 +29,6 @@ namespace CapaPresentacion
             cboEstado.ValueMember = "Value";
             cboEstado.SelectedIndex = 0;
 
-            List<Cliente> lista = new CN_Cliente().Listar();
-
             // Muestra  las columnas de GridView en el menu de búsqueda
             foreach (DataGridViewColumn columna in dataGridViewData.Columns)
             {
@@ -141,12 +139,12 @@ namespace CapaPresentacion
             {
                 e.Paint(e.CellBounds, DataGridViewPaintParts.All);
 
-                var w = Properties.Resources.emblemdefault_103452.Width;
-                var h = Properties.Resources.emblemdefault_103452.Height;
+                var w = Properties.Resources.check_16.Width;
+                var h = Properties.Resources.check_16.Height;
                 var x = e.CellBounds.Left + (e.CellBounds.Width - w) / 2;
                 var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
 
-                e.Graphics.DrawImage(Properties.Resources.emblemdefault_103452, new Rectangle(x, y, w, h));
+                e.Graphics.DrawImage(Properties.Resources.check_16, new Rectangle(x, y, w, h));
                 e.Handled = true;
             }
         }

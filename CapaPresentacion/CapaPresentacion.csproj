@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
     <Reference Include="ClosedXML, Version=0.102.3.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
       <HintPath>packages\ClosedXML.0.102.3\lib\netstandard2.0\ClosedXML.dll</HintPath>
     </Reference>
@@ -47,6 +50,12 @@
     </Reference>
     <Reference Include="Irony, Version=1.1.0.0, Culture=neutral, PublicKeyToken=ca48ace7223ead47, processorArchitecture=MSIL">
       <HintPath>packages\Irony.1.5.1\lib\netstandard2.0\Irony.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itextsharp.xmlworker.5.5.13.4\lib\net461\itextsharp.xmlworker.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -157,6 +166,12 @@
     <Compile Include="FrmDetalleVenta.Designer.cs">
       <DependentUpon>FrmDetalleVenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmNegocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNegocio.Designer.cs">
+      <DependentUpon>FrmNegocio.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,11 +184,23 @@
     <Compile Include="FrmProveedores.Designer.cs">
       <DependentUpon>FrmProveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmReporteCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporteCompras.Designer.cs">
+      <DependentUpon>FrmReporteCompras.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmReportes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmReportes.Designer.cs">
       <DependentUpon>FrmReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReporteVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporteVentas.Designer.cs">
+      <DependentUpon>FrmReporteVentas.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmUsuarios.cs">
       <SubType>Form</SubType>
@@ -199,6 +226,30 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modales\md_AcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modales\md_AcercaDe.Designer.cs">
+      <DependentUpon>md_AcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modales\md_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modales\md_Cliente.Designer.cs">
+      <DependentUpon>md_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modales\md_Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modales\md_Producto.Designer.cs">
+      <DependentUpon>md_Producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modales\md_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modales\md_Proveedor.Designer.cs">
+      <DependentUpon>md_Proveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilidades\OpcionCombo.cs" />
@@ -211,8 +262,14 @@
     <EmbeddedResource Include="FrmCompras.resx">
       <DependentUpon>FrmCompras.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmDetalleCompra.resx">
+      <DependentUpon>FrmDetalleCompra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDetalleVenta.resx">
       <DependentUpon>FrmDetalleVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNegocio.resx">
+      <DependentUpon>FrmNegocio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProducto.resx">
       <DependentUpon>FrmProducto.cs</DependentUpon>
@@ -220,8 +277,14 @@
     <EmbeddedResource Include="FrmProveedores.resx">
       <DependentUpon>FrmProveedores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporteCompras.resx">
+      <DependentUpon>FrmReporteCompras.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmReportes.resx">
       <DependentUpon>FrmReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporteVentas.resx">
+      <DependentUpon>FrmReporteVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUsuarios.resx">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>
@@ -234,6 +297,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modales\md_AcercaDe.resx">
+      <DependentUpon>md_AcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modales\md_Cliente.resx">
+      <DependentUpon>md_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modales\md_Producto.resx">
+      <DependentUpon>md_Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modales\md_Proveedor.resx">
+      <DependentUpon>md_Proveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -270,16 +345,25 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\delete_12319540.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\check_icon-icons.com_72363.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\emblemdefault_103452.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\trash-can_115312.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trah24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlantillaCompra.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlantillaVenta.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_c9488587-74e1-460e-8fc0-a7754938e121.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

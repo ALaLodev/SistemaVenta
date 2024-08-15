@@ -225,7 +225,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridViewData.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewData.RowTemplate.Height = 28;
-            this.dataGridViewData.Size = new System.Drawing.Size(1059, 440);
+            this.dataGridViewData.Size = new System.Drawing.Size(1059, 401);
             this.dataGridViewData.TabIndex = 49;
             this.dataGridViewData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewData_CellContentClick);
             this.dataGridViewData.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dataGridViewData_CellPainting);

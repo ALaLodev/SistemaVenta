@@ -37,7 +37,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnIngresar = new FontAwesome.Sharp.IconButton();
             this.btnCancelar = new FontAwesome.Sharp.IconButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -78,24 +81,24 @@
             // textDocumento
             // 
             this.textDocumento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textDocumento.Location = new System.Drawing.Point(430, 80);
+            this.textDocumento.Location = new System.Drawing.Point(394, 121);
             this.textDocumento.Name = "textDocumento";
-            this.textDocumento.Size = new System.Drawing.Size(173, 22);
+            this.textDocumento.Size = new System.Drawing.Size(289, 22);
             this.textDocumento.TabIndex = 3;
             // 
             // textPass
             // 
             this.textPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textPass.Location = new System.Drawing.Point(430, 161);
+            this.textPass.Location = new System.Drawing.Point(394, 184);
             this.textPass.Name = "textPass";
             this.textPass.PasswordChar = '*';
-            this.textPass.Size = new System.Drawing.Size(173, 22);
+            this.textPass.Size = new System.Drawing.Size(289, 22);
             this.textPass.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(430, 57);
+            this.label3.Location = new System.Drawing.Point(394, 98);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 16);
             this.label3.TabIndex = 5;
@@ -104,7 +107,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(430, 138);
+            this.label4.Location = new System.Drawing.Point(394, 161);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 16);
             this.label4.TabIndex = 6;
@@ -136,11 +139,11 @@
             this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.btnCancelar.IconChar = FontAwesome.Sharp.IconChar.CircleXmark;
             this.btnCancelar.IconColor = System.Drawing.Color.Black;
             this.btnCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCancelar.IconSize = 21;
-            this.btnCancelar.Location = new System.Drawing.Point(525, 228);
+            this.btnCancelar.Location = new System.Drawing.Point(567, 228);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(116, 42);
             this.btnCancelar.TabIndex = 8;
@@ -150,12 +153,34 @@
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(389, 43);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(178, 25);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "INICIAR SESION";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources._c9488587_74e1_460e_8fc0_a7754938e121;
+            this.pictureBox1.Location = new System.Drawing.Point(583, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 81);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(687, 304);
+            this.ClientSize = new System.Drawing.Size(736, 304);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.label4);
@@ -171,6 +196,7 @@
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,5 +213,7 @@
         private System.Windows.Forms.Label label4;
         private FontAwesome.Sharp.IconButton btnIngresar;
         private FontAwesome.Sharp.IconButton btnCancelar;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 using CapaEntidad;
 using CapaNegocio;
-
+using CapaPresentacion.Modales;
 using FontAwesome.Sharp;
 
 namespace CapaPresentacion
@@ -95,7 +95,7 @@ namespace CapaPresentacion
 
         private void submenuRegistrarVenta_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(menuVentas, new FrmVentas());
+            AbrirFormulario(menuVentas, new FrmVentas(usuarioActual));
         }
         private void submenuVerDetalleVenta_Click(object sender, EventArgs e)
         {
@@ -103,7 +103,7 @@ namespace CapaPresentacion
         }
         private void submenuRegCompra_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(menuCompras, new FrmCompras());
+            AbrirFormulario(menuCompras, new FrmCompras(usuarioActual));
         }
         private void submenuDetalleCompra_Click(object sender, EventArgs e)
         {
@@ -117,10 +117,7 @@ namespace CapaPresentacion
         {
             AbrirFormulario((IconMenuItem)sender, new FrmProveedores());
         }
-        private void menuReportes_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario((IconMenuItem)sender, new FrmReportes());
-        }
+      
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -155,6 +152,35 @@ namespace CapaPresentacion
         private void menuTitulo_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void submenuNegocio_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menuMantenedor, new FrmNegocio());
+        }
+
+        private void submenuReporteCompras_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menuReportes, new FrmReporteCompras());
+        }
+
+        private void submenuReporteVentas_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menuReportes, new FrmReporteVentas());
+        }
+
+        private void menuAcercaDe_Click(object sender, EventArgs e)
+        {
+            md_AcercaDe md = new md_AcercaDe();
+            md.ShowDialog();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea salir?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }

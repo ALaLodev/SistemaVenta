@@ -37,7 +37,6 @@ namespace CapaPresentacion
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            List<Usuario> TEST = new CN_Usuario().Listar();
 
             Usuario oUsuario = new CN_Usuario().Listar().Where(u => u.Documento == textDocumento.Text && u.Clave == textPass.Text).FirstOrDefault();
 
@@ -64,5 +63,6 @@ namespace CapaPresentacion
             textPass.Text = "";
             this.Show();
         }
+
     }
 }

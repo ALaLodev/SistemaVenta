@@ -14,9 +14,10 @@ namespace CapaPresentacion
         [STAThread]
         static void Main()
         {
+            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("es-PE"); //Cambia la region de la aplicación y utilizar "." en decimales en vez de ","
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Inicio());
+            Application.Run(new Login());
         }
     }
 }
