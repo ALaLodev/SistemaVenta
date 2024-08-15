@@ -365,5 +365,11 @@
   <ItemGroup>
     <None Include="Resources\check.16.png" />
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Consultas SQL\AlgunasConsultas_con_varias_Tablas.sql" />
+    <Content Include="Consultas SQL\Procedimientos_almacenados.sql" />
+    <Content Include="Consultas SQL\SQL_CreaciónTablas_SistemaVentas.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
