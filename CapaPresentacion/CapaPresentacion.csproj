@@ -367,6 +367,14 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Capturas\Captura de pantalla 2024-09-25 145502.png" />
+    <Content Include="Capturas\Captura de pantalla 2024-09-25 145540.png" />
+    <Content Include="Capturas\Captura de pantalla 2024-09-25 145559.png" />
+    <Content Include="Capturas\Captura de pantalla 2024-09-25 145736.png" />
+    <Content Include="Capturas\Captura de pantalla 2024-09-25 145811.png" />
+    <Content Include="Capturas\Captura de pantalla 2024-09-25 150130.png" />
+    <Content Include="Capturas\Captura de pantalla 2024-09-25 150232.png" />
+    <Content Include="Capturas\Captura de pantalla 2024-09-25 150340.png" />
     <Content Include="Consultas SQL\AlgunasConsultas_con_varias_Tablas.sql" />
     <Content Include="Consultas SQL\Procedimientos_almacenados.sql" />
     <Content Include="Consultas SQL\SQL_CreaciónTablas_SistemaVentas.sql" />
