@@ -5,7 +5,7 @@
 ![Login](https://github.com/ALaLodev/SistemaVenta/blob/master/CapaPresentacion/Capturas/Captura%20de%20pantalla%202024-09-25%20145502.png) 
 ![Menu](https://github.com/ALaLodev/SistemaVenta/blob/master/CapaPresentacion/Capturas/Captura%20de%20pantalla%202024-09-25%20145540.png)
 ![Ventas](https://github.com/ALaLodev/SistemaVenta/blob/master/CapaPresentacion/Capturas/Captura%20de%20pantalla%202024-09-25%20145736.png)
-![Excel](https://github.com/ALaLodev/SistemaVenta/blob/master/CapaPresentacion/Capturas/Captura%20de%20pantalla%202024-09-25%20150232.png)
+
 ![Cambio datos Empresa](https://github.com/ALaLodev/SistemaVenta/blob/master/CapaPresentacion/Capturas/Captura%20de%20pantalla%202024-09-25%20145559.png)
 ![Exporta Excel](https://github.com/ALaLodev/SistemaVenta/blob/master/CapaPresentacion/Capturas/Captura%20de%20pantalla%202024-09-25%20150232.png)
 ![PDF](https://github.com/ALaLodev/SistemaVenta/blob/master/CapaPresentacion/Capturas/Captura%20de%20pantalla%202024-09-25%20150340.png)
